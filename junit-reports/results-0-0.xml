@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="My Login application" timestamp="2023-07-17T12:50:47" time="0.002" tests="1" failures="0" errors="0" skipped="1">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="My Login application"/>
+      <property name="capabilities" value="chrome.114_0_5735_199.windows"/>
+      <property name="file" value="file:///D:/Automation/Webdriverio/07jenkinstest/test/specs/test.e2e.ts"/>
+    </properties>
+    <testcase classname="chrome.114_0_5735_199.windows.My_Login_application" name="should login with valid credentials" time="0">
+      <skipped/>
+    </testcase>
+  </testsuite>
+  <testsuite name="Google Add" timestamp="2023-07-17T12:50:47" time="12.508" tests="2" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="Google Add"/>
+      <property name="capabilities" value="chrome.114_0_5735_199.windows"/>
+      <property name="file" value="file:///D:/Automation/Webdriverio/07jenkinstest/test/specs/test.e2e.ts"/>
+    </properties>
+    <testcase classname="chrome.114_0_5735_199.windows.Google_Add" name="Open Site" time="7.168">
+      <system-out><![CDATA[
+COMMAND: POST /session/8ced8b022655fe837c8ae8ef6b551379/url - {"url":"https://www.google.com/"}
+RESULT: {"url":"https://www.google.com/"}
+]]></system-out>
+    </testcase>
+    <testcase classname="chrome.114_0_5735_199.windows.Google_Add" name="Add data to search and click search" time="5.339">
+      <system-out><![CDATA[
+COMMAND: POST /session/8ced8b022655fe837c8ae8ef6b551379/element - {"using":"xpath","value":"//*[@id=\"APjFqb\"]"}
+RESULT: {"using":"xpath","value":"//*[@id=\"APjFqb\"]"}
+COMMAND: POST /session/8ced8b022655fe837c8ae8ef6b551379/element/452528471A1C8DCC799D65F04BF5F2D9_element_3/clear - {}
+RESULT: {}
+COMMAND: POST /session/8ced8b022655fe837c8ae8ef6b551379/element/452528471A1C8DCC799D65F04BF5F2D9_element_3/value - {"text":"youtube"}
+RESULT: {"text":"youtube"}
+COMMAND: POST /session/8ced8b022655fe837c8ae8ef6b551379/element - {"using":"css selector","value":"body > div.L3eUgb > div.o3j99.ikrT4e.om7nvf > form > div:nth-child(1) > div.A8SBwf > div.FPdoLc.lJ9FBc > center > input.gNO89b"}
+RESULT: {"using":"css selector","value":"body > div.L3eUgb > div.o3j99.ikrT4e.om7nvf > form > div:nth-child(1) > div.A8SBwf > div.FPdoLc.lJ9FBc > center > input.gNO89b"}
+COMMAND: POST /session/8ced8b022655fe837c8ae8ef6b551379/element/452528471A1C8DCC799D65F04BF5F2D9_element_16/click - {}
+COMMAND: DELETE /session/8ced8b022655fe837c8ae8ef6b551379 - {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
